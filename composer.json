@@ -1,0 +1,7 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.93",
+        "mgargano/simplehtmldom": "^1.5",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
