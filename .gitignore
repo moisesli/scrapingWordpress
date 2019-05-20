@@ -1,3 +1,5 @@
 .idea/
 .vscode/
 conn.php
+.DS_Store
+aws.php

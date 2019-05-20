@@ -19,8 +19,8 @@ include_once "./import/gizmodo.php";
 use Aws\S3\S3Client;
 
 // S3
-$key = 'AKIARUGS3XNMZ3653JHQ';
-$secret = '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';
+// $key $secret  variables de tu aws credenciales
+include_once "aws.php";
 $credentials = new Aws\Credentials\Credentials($key , $secret);
 $s3 = new S3Client([
   'version' => 'latest',
