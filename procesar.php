@@ -16,6 +16,7 @@ include_once "conn.php";
 include "urlAmigable.php";
 include_once "./import/mashable.php";
 include_once "./import/gizmodo.php";
+include_once "./import/rt.php";
 use Aws\S3\S3Client;
 
 // S3
@@ -50,6 +51,8 @@ if ($web == 'mashable'){
   $response = mashableImport($html,$s3,$anho,$mes,$nombre);
 }elseif ($web == 'gizmodo'){
   $response = gizmodoImport($html,$s3,$anho,$mes,$nombre);
+}elseif ($web == 'rt'){
+    $response = rtImport($html,$s3,$anho,$mes,$nombre);
 }
 
 $titulo = $response['titulo'];

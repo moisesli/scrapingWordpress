@@ -17,6 +17,7 @@
         <option disabled selected>Seleccione la Web</option>
         <option value="mashable">Mashable</option>
         <option value="gizmodo">Gizmodo</option>
+          <option value="rt">RT</option>
       </select>
     </div>
     <div class="form-group">
